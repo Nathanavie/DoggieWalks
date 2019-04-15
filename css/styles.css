@@ -1,0 +1,20 @@
+body {
+  background: url("../images/back_paw.svg") #DCEAFF;
+  margin: 0;
+  background-repeat: repeat;
+}
+header {
+  background: url("images/blacklab.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+nav a {
+  font-size: 14pt;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  margin: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+}

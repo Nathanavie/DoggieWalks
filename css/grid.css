@@ -1,0 +1,97 @@
+@media only screen and (max-width: 500px)  {
+  .headergrid{
+    display: grid;
+    grid-template-area: ". . logo . nav"
+                        ". head head head ."
+                        ". tag tag tag ";
+
+  }
+  .dog {
+    display:none;
+  }
+}
+
+.headergrid {
+  display: grid;
+  grid-template-rows: auto 50px auto;
+  grid-template-columns: 100px auto auto auto 100px;
+  grid-template-areas: ". logo nav nav nav ."
+                       ". Title Title dog dog ."
+                       ". Tag Tag dog dog .";
+  grid-gap: 10px;
+  padding: 80px;
+}
+.logo {
+  grid-column: 2;
+  grid-row: 1;
+}
+.nav {
+  grid-area: nav;
+}
+.title {
+  grid-area: Title;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+}
+.tag {
+  grid-area: Tag;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 10px;
+}
+.dog {
+  grid-area: dog;
+  width: 150%;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "heading ."
+                       "content locations"
+                       "content times"
+                       "title title"
+                       "sitting sittingprice"
+                       "visits visitsprice"
+                       "overnight overnightprice"
+                       "content2 content2";
+  grid-template-columns: 50% 50%;
+  width: 80%;
+  margin: 0 auto;
+}
+.heading {
+  grid-area: heading;
+}
+.paragraph {
+  grid-area: content;
+}
+.locations {
+  grid-area: locations;
+}
+.times {
+  grid-area: times;
+}
+.heading2 {
+  grid-area: title;
+}
+.sitting {
+  grid-area: sitting;
+}
+.sittingprice {
+  grid-area: sittingprice;
+}
+.smallpet {
+  grid-area: visits;
+}
+.smallpetprice {
+  grid-area: visitsprice;
+}
+.overnight {
+  grid-area: overnight;
+}
+.lastpar {
+  grid-area: content2;
+}
+
+#lightwaves {
+
+}
