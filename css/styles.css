@@ -1,12 +1,15 @@
 body {
-  background: url("../images/back_paw.svg") #DCEAFF;
+  background: url("../images/paws.svg") #DCEAFF;
   margin: 0;
+  background-size: contain;
   background-repeat: repeat;
+  background-position: left;
+  font-family: 'Montserrat', sans-serif;
 }
 header {
-  background: url("images/blacklab.jpeg");
+  background: url("../images/banner.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 nav a {
   font-size: 14pt;
@@ -17,4 +20,7 @@ nav a {
   padding: 15px;
   color: #FFFFFF;
   text-decoration: none;
+}
+p {
+  font-family: 'Raleway', sans-serif;
 }
