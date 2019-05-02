@@ -2,68 +2,114 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/grid.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <title>Doggie Walks</title>
+    <!-- Link to JS files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Contact - Doggie Walks</title>
   </head>
   <body>
-    <header class="headergrid">
-      <a href="index.html"><img class="logo" src="images/logo.svg"></img></a>
-      <nav class="nav">
-          <a href="index.html">Home</a>
-          <div class="dropdown">
-            <a href="about.html"><button class="dropbtn">About Us
-              <i class="fa fa-caret-down"></i>
-            </button></a>
-            <div class="dropdown-content">
-              <a href="team.html">Meet The Team</a>
-            </div>
-          </div>
-          <a href="services.html">Services</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="contact.html">Contact Us</a>
-      </nav>
-      <h1 class="title">Doggie Walks</h1>
-      <h2 class="tag">Helping Our Animal Friends One Paw At A Time</h2>
-      <a href="contact.html"><img class="dog" src="images/Promo.svg"></img></a>
-    </header>
-    <article>
-      <section>
-        <h1 class="heading">Welcome To Doggie Walks</h1>
-        <p class="paragraph">We are commited to providing professional and personal care to your beloved four-legged friends.
-        We are based in Macclesfield and we offer exciting and stimulating walks all over the beautiful Chesire countryside. We gaurantee your dog will come home tired and content.
-        We recognise every dog’s needs are different and how busy daily life can be. With services starting from only £10 we ensure that you the best possible service to suit the needs of both you and your pooch.
-        We are also fully insured for everybody’s peace of mind, for more information on this please contact us or email at info@doggiewalks.co.uk</p>
+    <header>
+      <section class="headgrid">
+        <a class="logo" href="index.html"><img src="img/logo.svg"></img></a>
+        <nav class="hidden  " id="dropdown">
+          <a class="dropbtn" href="about.html">
+            About Us
+          </a>
+          <a class="dropbtn" href="team.html">
+            Meet The Team
+          </a>
+        </nav>
+        <nav>
+          <a href="index.html">
+            Home
+          </a>
+          <a class="dropmenu">
+            About &#x25BE;
+          </a>
+          <a class="active" href="services.html">
+            Services
+          </a>
+          <a href="gallery.html">
+            Gallery
+          </a>
+          <a href="contact.html">
+            Contact Us
+          </a>
+        </nav>
+        <a href="tel:0161-883-1122"><img src="img/call.svg" class="call"  alt="Call Us"></a>
+        <h1 class="headtitle">Doggie Walks</h1>
+        <h2 class="headtag">Helping Our Animal Friends One Paw At A Time</h2>
+        <a class="adddog" href="contact.html"><img src="img/Promo.svg"></img></a>
       </section>
-      <section class="locations">
-        <h3>Where We Are</h3>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+      </header>
+    <article class="sart">
+
+      <section class="flex">
+        <h1>Services and Cost</h1>
+        <p>Your dog shall receive the full-length time it deserves. Check for your local branch and pop in if you're unsure which service is right for you! Every dog is unique meaning that every dog deserves our full attention 7 days a week!</p>
       </section>
-      <section class="times">
-        <h3>Opening Times</h3>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+
+      <section class="service walking" id="#walk">
+        <h1>Dog Walking</h1>
+        <h3>Duration: 1 Hour</h3>
+        <p>Click for more info</p>
+        <section class="price">
+          <h2>£12 per hour</h2>
+        </section>
       </section>
-      <section>
-        <h2 class="heading2">
-        <figure class="sitting">
-          <figcaption>Pet Sitting (Puppy and Elderly)</figcaption>
-        </figure>
-        <figure class="smallpet">
-          <figcaption>Small Pet Visits</figcaption>
-        </figure>
-        <figure class="overnight">
-          <figcaption>Overnight Pet Sittings</figcaption>
-        </figure>
+      <section id="walk" class="h-cont hidden">
+        <p>Not all dogs enjoy group walks, therefore we provide two different services. Solo or group. Discover which option is best for your dog!</p>
+      </section>
+
+        <section class="service house" id="#house">
+          <h1>House Calls</h1>
+          <h3>Duration: 1 Hour</h3>
+          <p>Click for more info</p>
+          <section class="price">
+            <h2>£15 per hour</h2>
+          </section>
+        </section>
+        <section id="house" class="h-cont hidden">
+          <p>Do you need your dog looking after whilst you are not at home? This service allows you to have peace of mind while we ensure that your dog has the attention and care it deserves.</p>
+        </section>
+
+        <section class="service daycare" id="#daycare">
+          <h1>Day Care</h1>
+          <h3>Duration: 8 Hours per Day</h3>
+          <p>Click for more info</p>
+          <section class="price">
+            <h2>£60 per day</h2>
+          </section>
+        </section>
+        <section id="daycare" class="h-cont hidden">
+          <p>Our profesionnal day care centres provide the most up to date and clean facilities which ensures that your dog is safe, protected, and healthy! This will cover all services from feeding, bathing, walking, and sleeping.</p>
+        </section>
+
     </article>
+    <footer>
+      <section class="left">
+        <p>Phone: 0161 883 1122</p>
+        <p>Email: info@doggiewalks.co.uk</p>
+      </section>
+      <section class="footerlogo">
+        <a href="index.html"><img src="img/logo.svg"></img></a>
+      </section>
+      <section class="right">
+          <h3>Opening Times</h3>
+          <ul>
+            <li>Monday - Friday</li>
+            <li>8am - 7pm</li>
+            <li>Saturday</li>
+            <li>8am - 5pm</li>
+            <li>Sunday</li>
+            <li>12pm - 5pm</li>
+          </ul>
+        </p>
+      </section>
+    </footer>
   </body>
 </html>
