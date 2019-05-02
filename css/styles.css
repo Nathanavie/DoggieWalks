@@ -101,7 +101,9 @@ nav a:hover {
 }
 p {
   font-family: 'Raleway', sans-serif;
-  font-size: 24pt;
+  font-size: 16pt;
+  text-align: justify;
+  line-height: 1.5;
 }
 header h1{
   color: #FFFFFF;
@@ -165,7 +167,16 @@ aside h3::after {
   cursor: url(../img/1x/asset.png), pointer;
   filter: drop-shadow(2px 15px 10px gray);
 }
-
+.teamlist {
+  height: 25em;
+  width: 90em;
+  transition: all 0.5s ease;
+  position: relative;
+  background-size: 120%;
+  background-position: right;
+  margin-bottom: 1em;
+  filter: drop-shadow(2px 15px 10px gray);
+}
 .index2 a section p {
   text-decoration:overline;
   color: white;
@@ -184,6 +195,18 @@ aside h3::after {
 .overnight {
   background-image: linear-gradient(#00000080,#00000080), url(../img/sit.jpg);
 }
+.lori {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/cava.jpg);
+}
+.gary {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/fetch.jpg);
+}
+.rebecca {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/shepherd.jpg);
+}
+.joanna {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/pupwater.jpg);
+}
 .quote {
   position: absolute !important;
   left: 75%;
@@ -193,12 +216,31 @@ aside h3::after {
   color: black;
   height: 100%
 }
+.team {
+  position: absolute;
+  left: 75%;
+  background-color: #eb7859CC;
+  box-sizing: border-box;
+  color: black;
+  height: 100%;
+}
 .offers h1 {
   font-size: 40pt;
   position: absolute;
   color: white;
   margin: 3em 7em 0em 1em;
-
+}
+.teamlist h1 {
+  font-size: 40pt;
+  position: absolute;
+  color: white;
+  margin: 3em 7em 0em 1em;
+}
+.teamlist h2 {
+  font-size: 32pt;
+  position: absolute;
+  color: white;
+  margin: 5em 7em 0em 1.25em;
 }
 .quote h2 {
   color: white;
@@ -242,6 +284,11 @@ aside h3::after {
   width: 15em;
   margin-bottom: 1em;
   border-radius: 1em;
+  transition: transform 0.5s ease;
+}
+.aboutpage a:hover {
+  transform: scale(1.2);
+  cursor: url(../img/1x/asset.png), pointer;
 }
 .aboutpage p {
   text-align: left;
