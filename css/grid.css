@@ -68,7 +68,7 @@ article {
 .right {grid-area: right;}
 footer {
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: 33.3%;
   grid-template-areas:
     "left mid right";
     grid-gap: 1em;

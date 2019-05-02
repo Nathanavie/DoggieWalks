@@ -1,3 +1,9 @@
+.hidden {
+  display: none !important;
+}
+.shownav {
+  animation: navslide 0.5s forwards;
+}
 body {
   background: url("../img/paws.svg") #DCEAFF;
   margin: 0;
@@ -25,10 +31,19 @@ nav a {
   color: #FFFFFF;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  background: #FFFFFF3d;
 }
 nav a:hover {
   cursor: url(../img/1x/asset.png), pointer;
   background: #FFFFFF81
+}
+#dropdown {
+  display: flex;
+  position: absolute;
+  margin-top: 6.5em;
+}
+.dropbtn {
+  background: #FFFFFF3d;
 }
 .call {
   width: 100%;
@@ -37,9 +52,17 @@ nav a:hover {
 .call:hover {
   cursor: url(../img/1x/asset.png), pointer;
 }
+@keyframes navslide {
+  0% {
+    margin-left: -4em;
+  }
+  100% {
+    margin-left: 16.5em;
+  }
+}
 @keyframes bounce {
   0% {
-    width: 100%
+    width: 100%;
   }
   50% {
     width: 95%;
@@ -182,13 +205,12 @@ aside h3::after {
   margin: auto
 }
 .left {
-  text-align: center;
+  padding-left: 1em;
 }
 .right {
-  text-align: center;
+  text-align: right;
+  padding-right: 1em;
 }
 .right ul {
-  text-align: left;
   list-style: none;
-  margin: auto;
 }

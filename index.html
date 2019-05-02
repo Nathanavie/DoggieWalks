@@ -6,23 +6,30 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/grid.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- Link to JS files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Doggie Walks</title>
   </head>
   <body>
     <header>
       <section class="headgrid">
         <a class="logo" href="index.html"><img src="img/logo.svg"></img></a>
+        <nav class="hidden  " id="dropdown">
+          <a class="dropbtn" href="about.html">
+            About Us
+          </a>
+          <a class="dropbtn" href="team.html">
+            Meet The Team
+          </a>
+        </nav>
         <nav>
           <a class="active" href="index.html">
             Home
           </a>
-          <a href="about.html">
-            About Us
+          <a class="dropmenu">
+            About Us &#x25BE;
           </a>
-              <a href="team.html">
-                Meet The Team
-              </a>
           <a href="services.html">
             Services
           </a>
@@ -118,6 +125,7 @@
             <li>Sunday</li>
             <li>12pm - 5pm</li>
           </ul>
+        </p>
       </section>
     </footer>
   </body>
