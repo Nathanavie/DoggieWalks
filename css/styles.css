@@ -77,6 +77,15 @@ nav a:hover {
     transform: rotate3d(0, 0, 0, 0deg);
   }
 }
+@keyframes show {
+  80% {
+    z-index: 0;
+  }
+  100% {
+    margin-top: 0em;
+    z-index: 2;
+  }
+}
 .active {
   background: #FFFFFF81;
 }
@@ -167,6 +176,37 @@ aside h3::after {
   cursor: url(../img/1x/asset.png), pointer;
   filter: drop-shadow(2px 15px 10px gray);
 }
+.h-cont {
+  transition: all 0.5s ease;
+  margin-top: -5em;
+  z-index: 0;
+  width: 90em;
+  background: #eb7859;
+  filter: drop-shadow(2px 15px 10px gray);
+}
+.h-cont p {
+  padding: 1em;
+  color: #FFFFFF;
+  font-size: 16pt;
+}
+.showh-cont {
+  animation: show 0.5s forwards;
+}
+.service {
+  height: 25em;
+  width: 90em;
+  transition: all 0.5s ease;
+  position: relative;
+  background-size: 120%;
+  background-position: right;
+  margin-top: 1em;
+  cursor: url(../img/1x/asset.png), pointer;
+  filter: drop-shadow(2px 15px 10px gray);
+  z-index: 1;
+}
+.service:hover {
+  background-size: 100%;
+}
 .teamlist {
   height: 25em;
   width: 90em;
@@ -207,6 +247,15 @@ aside h3::after {
 .joanna {
   background-image: linear-gradient(#00000080,#00000080), url(../img/pupwater.jpg);
 }
+.walking {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/forestdog.jpg);
+}
+.house {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/shake.jpg);
+}
+.daycare {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/4dog.jpg);
+}
 .quote {
   position: absolute !important;
   left: 75%;
@@ -215,6 +264,37 @@ aside h3::after {
   box-sizing: border-box;
   color: black;
   height: 100%
+}
+.price {
+  position: absolute !important;
+  left: 75%;
+  width: 25% !important;
+  background-color: #eb7859;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  height: 100%
+}
+.price h2 {
+  color: #FFFFFF;
+  text-align: center;
+  margin: 3em auto;
+}
+.service h1{
+  color: #FFFFFF;
+  position: absolute;
+  font-size: 40pt;
+  margin: 3em 7em 0em 1em;
+}
+.service h3 {
+  font-size: 32pt;
+  position: absolute;
+  color: #FFFFFF;
+  margin: 5em 7em 0em 1.25em;
+}
+.service p {
+  position: absolute;
+  color: #FFFFFF;
+  margin: 12em 0em 0em 2.5em;
 }
 .team {
   position: absolute;
@@ -227,8 +307,14 @@ aside h3::after {
 .offers h1 {
   font-size: 40pt;
   position: absolute;
-  color: white;
+  color: #FFFFFF;
   margin: 3em 7em 0em 1em;
+}
+.offers h2 {
+  font-size: 32pt;
+  position: absolute;
+  color: white;
+  margin: 5em 7em 0em 1.25em;
 }
 .teamlist h1 {
   font-size: 40pt;
@@ -274,7 +360,7 @@ aside h3::after {
 .right ul {
   list-style: none;
 }
-.aboutpage a {
+.flex a {
   text-decoration: none;
   font-size: 16pt;
   text-align: center;
@@ -286,10 +372,13 @@ aside h3::after {
   border-radius: 1em;
   transition: transform 0.5s ease;
 }
-.aboutpage a:hover {
+.flex a:hover {
   transform: scale(1.2);
   cursor: url(../img/1x/asset.png), pointer;
 }
-.aboutpage p {
-  text-align: left;
+.flex p {
+  text-align: justify;
+}
+.sart {
+  margin-bottom: 2em;
 }

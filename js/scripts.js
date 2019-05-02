@@ -5,4 +5,11 @@ $(document).ready(function() {
     $('#dropdown').toggleClass("hidden");
     $('#dropdown').toggleClass("shownav");
   });
+
+  $(".service").click(function(ev){
+  var sh = $(this).attr("id");
+  $(sh).toggleClass("hidden");
+  $(sh).toggleClass("showh-cont");
+});
+
 });
