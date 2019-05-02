@@ -27,31 +27,33 @@ article {
 .headtitle {grid-area: title;}
 .headtag {grid-area: tag;}
 .adddog {grid-area: dog;}
+.call {grid-area: call;}
 .headgrid {
   display: grid;
-  grid-template-columns: 10% 45% 45%;
-  grid-template-areas: "logo nav nav"
-                        "title title dog"
-                        "tag tag dog";
+  grid-template-columns: 10% 45% 25% 20%;
+  grid-template-areas: "logo nav nav call"
+                        "title title dog dog"
+                        "tag tag dog dog";
   grid-gap: 1em;
   padding: 3em;
   margin: 0 auto;
   width: 80%;
 }
 
+.indextitle {grid-area: title;}
 .indextext {grid-area: text;}
 .locations {grid-area: loc;}
 .opentime {grid-area: times;}
 .index1grid {
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 74% 25%;
   grid-template-areas:
+    "title title"
     "text loc"
     "text times";
   grid-gap: 1em;
   padding: 0em 3em 3em 3em;
-  margin: 0 auto;
-  width: 80%;
+  width: 90em;
 }
 
 .index2 {
@@ -62,15 +64,15 @@ article {
 }
 
 .left {grid-area: left;}
-.footerlogo {grid-area: mid};
+.footerlogo {grid-area: mid;}
 .right {grid-area: right;}
 footer {
   display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
   grid-template-areas:
     "left mid right";
     grid-gap: 1em;
     width: 100%;
-    position: absolute;
     background: black;
     color: white;
 }

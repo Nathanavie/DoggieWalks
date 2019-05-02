@@ -1,26 +1,194 @@
 body {
-  background: url("../images/paws.svg") #DCEAFF;
+  background: url("../img/paws.svg") #DCEAFF;
   margin: 0;
   background-size: contain;
   background-repeat: repeat;
   background-position: left;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 header {
-  background: url("../images/banner.png");
+  background: url("../img/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+nav {
+  margin-top: calc(0% + 3em);
 }
 nav a {
   font-size: 14pt;
   border: none;
   outline: none;
   background-color: inherit;
-  margin: 0;
-  padding: 15px;
+  margin: 1em;
+  padding: 1em;
   color: #FFFFFF;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+nav a:hover {
+  cursor: url(../img/1x/asset.png), pointer;
+  background: #FFFFFF81
+}
+.call {
+  width: 100%;
+  animation: bounce 2s infinite;
+}
+.call:hover {
+  cursor: url(../img/1x/asset.png), pointer;
+}
+@keyframes bounce {
+  0% {
+    width: 100%
+  }
+  50% {
+    width: 95%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.active {
+  background: #FFFFFF81;
+}
+.adddog {
+  transition: all 0.3s ease-in-out;
+  width: 65%;
+  margin: auto 0;
+}
+.adddog:hover {
+  transform: scale(1.1);
+  cursor: url(../img/1x/asset.png), pointer;
+}
+.logo{
+  transition: transform 0.5s ease-in-out;
+}
+.logo:hover {
+  cursor: url(../img/1x/asset.png), pointer;
+  transform: scale(1.1);
 }
 p {
   font-family: 'Raleway', sans-serif;
+  font-size: 24pt;
+}
+header h1{
+  color: #FFFFFF;
+  font-size: 55pt;
+}
+header h2 {
+  color: #FFFFFF;
+}
+h1 {
+  color: #000000;
+  font-size: 40pt;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 1000;
+}
+h2 {
+  color: #000000;
+}
+article {
+  margin-top: 1em;
+}
+section aside {
+  background: #EB7859B3;
+  width: 94%;
+  padding-left: 6%;
+  font-size: 17pt
+}
+section aside h3 {
+  color: #FFFFFF;
+  text-align: center;
+}
+section aside ul {
+  color: #FFFFFF;
+  list-style: square;
+  line-height: 2;
+  text-align: left;
+  list-style-position: inside;
+}
+aside h3::before {
+  content: url(../img/navpaw.svg);
+  float: left;
+  width: 1.5em;
+  height: 2em;
+}
+
+aside h3::after {
+  content: url(../img/navpaw.svg);
+  float: right;
+  width: 1.5em;
+  height: 2em;
+  margin-right: 1em;
+}
+.offers {
+  height: 25em;
+  width: 90em;
+  transition: all 0.5s ease;
+  position: relative;
+  background-size: 120%;
+  background-position: right;
+  margin-bottom: 1em;
+  cursor: url(../img/1x/asset.png), pointer;
+  filter: drop-shadow(2px 15px 10px gray);
+}
+
+.index2 a section p {
+  text-decoration:overline;
+  color: white;
+}
+
+.index2 a section:hover {
+  background-size: 100%;
+}
+
+.sitting {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/lab1.jpg);
+}
+.visits {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/walk2.jpg);
+}
+.overnight {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/sit.jpg);
+}
+.quote {
+  position: absolute !important;
+  left: 75%;
+  width: 25% !important;
+  background-color: #eb7859CC;
+  box-sizing: border-box;
+  color: black;
+  height: 100%
+}
+.offers h1 {
+  font-size: 40pt;
+  position: absolute;
+  color: white;
+  margin: 3em 7em 0em 1em;
+
+}
+.quote h2 {
+  color: white;
+  font-size: 40pt;
+  line-height: 5em;
+  text-align: center;
+}
+.lastpar {
+  align-self: flex-start;
+  font-size: 18pt;
+}
+.footerlogo {
+  width: 12em;
+  margin: auto
+}
+.left {
+  text-align: center;
+}
+.right {
+  text-align: center;
+}
+.right ul {
+  text-align: left;
+  list-style: none;
+  margin: auto;
 }
