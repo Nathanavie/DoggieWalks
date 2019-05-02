@@ -202,7 +202,10 @@ aside h3::after {
 }
 .footerlogo {
   width: 12em;
-  margin: auto
+  margin: auto;
+}
+.footerlogo a:hover {
+  cursor: url(../img/1x/asset.png), pointer;
 }
 .left {
   padding-left: 1em;
