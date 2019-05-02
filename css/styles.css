@@ -47,7 +47,7 @@ nav a:hover {
 }
 .call {
   width: 100%;
-  animation: bounce 2s infinite;
+  animation: bounce 0.3s 1s infinite both;
 }
 .call:hover {
   cursor: url(../img/1x/asset.png), pointer;
@@ -62,13 +62,19 @@ nav a:hover {
 }
 @keyframes bounce {
   0% {
-    width: 100%;
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+  25% {
+    transform: rotate3d(0, 1, 1, 1deg);
   }
   50% {
-    width: 95%;
+    transform: rotate3d(1, 1, 1, -1deg);
+  }
+  75% {
+    transform: rotate3d(0, 1, 1, 1deg);
   }
   100% {
-    width: 100%;
+    transform: rotate3d(0, 0, 0, 0deg);
   }
 }
 .active {
