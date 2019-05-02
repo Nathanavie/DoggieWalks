@@ -74,6 +74,9 @@ nav a:hover {
 .active {
   background: #FFFFFF81;
 }
+.activepage {
+  background: #FFFFFF81;
+}
 .adddog {
   transition: all 0.3s ease-in-out;
   width: 65%;
@@ -109,6 +112,7 @@ h1 {
 }
 h2 {
   color: #000000;
+  font-size: 35pt;
 }
 article {
   margin-top: 1em;
@@ -199,6 +203,11 @@ aside h3::after {
 .lastpar {
   align-self: flex-start;
   font-size: 18pt;
+  margin: 0 auto;
+  width: 75%;
+}
+.lastpar span{
+  color: #EB7859;
 }
 .footerlogo {
   width: 12em;
@@ -216,4 +225,18 @@ aside h3::after {
 }
 .right ul {
   list-style: none;
+}
+.aboutpage a {
+  text-decoration: none;
+  font-size: 16pt;
+  text-align: center;
+  color: #FFFFFF;
+  background: #EB7859;
+  padding: 1em;
+  width: 15em;
+  margin-bottom: 1em;
+  border-radius: 1em;
+}
+.aboutpage p {
+  text-align: left;
 }
