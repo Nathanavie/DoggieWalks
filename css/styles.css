@@ -226,6 +226,13 @@ aside h3::after {
   background-size: 100%;
 }
 
+.locgrid section {
+  background: #eb7859;
+  padding: 1em;
+  width: 80%;
+  color: #FFFFFF;
+}
+
 .sitting {
   background-image: linear-gradient(#00000080,#00000080), url(../img/lab1.jpg);
 }
@@ -331,8 +338,9 @@ aside h3::after {
 .quote h2 {
   color: white;
   font-size: 40pt;
-  line-height: 5em;
+  line-height: 7em;
   text-align: center;
+  margin: 0;
 }
 .lastpar {
   align-self: flex-start;
@@ -371,6 +379,7 @@ aside h3::after {
   margin-bottom: 1em;
   border-radius: 1em;
   transition: transform 0.5s ease;
+  align-self: center;
 }
 .flex a:hover {
   transform: scale(1.2);
@@ -381,4 +390,31 @@ aside h3::after {
 }
 .sart {
   margin-bottom: 2em;
+}
+input[type=text], input[type=email], input[type=tel], textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #EB7859;
+  box-sizing: border-box;
+  resize: vertical;
+  margin: 1em auto;
+}
+
+input[type=image] {
+  width: 6em;
+  margin-left: 47.5%;
+  vertical-align: middle;
+  transition: transform 0.5s ease;
+}
+input[type=image]:hover {
+  transform: scale(1.2);
+}
+input[type=image]:active {
+  transform: scale(0.2);
+}
+form {
+  width: 90em;
+  background: #EB7859;
+  padding: 2em;
+  margin: 4em auto;
 }

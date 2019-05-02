@@ -79,10 +79,21 @@ footer {
 .flex {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   width: 75%;
-} 
+}
+.manc {grid-area: Manc;}
+.macc {grid-area: Macc;}
+.southport {grid-area: South;}
+.warrington {grid-area: Warr;}
+.locgrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "Manc Macc" "South Warr";
+  grid-gap: 4em;
+  width: 100%
+}
 
 
 

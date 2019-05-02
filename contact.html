@@ -30,13 +30,13 @@
           <a class="dropmenu">
             About &#x25BE;
           </a>
-          <a class="active" href="services.html">
+          <a href="services.html">
             Services
           </a>
           <a href="gallery.html">
             Gallery
           </a>
-          <a href="contact.html">
+          <a class="active" href="contact.html">
             Contact Us
           </a>
         </nav>
@@ -46,49 +46,60 @@
         <a class="adddog" href="contact.html"><img src="img/Promo.svg"></img></a>
       </section>
       </header>
-    <article class="sart">
-
+    <article>
       <section class="flex">
-        <h1>Services and Cost</h1>
-        <p>Your dog shall receive the full-length time it deserves. Check for your local branch and pop in if you're unsure which service is right for you! Every dog is unique meaning that every dog deserves our full attention 7 days a week!</p>
-      </section>
-
-      <section class="service walking" id="#walk">
-        <h1>Dog Walking</h1>
-        <h3>Duration: 1 Hour</h3>
-        <p>Click for more info</p>
-        <section class="price">
-          <h2>£12 per hour</h2>
+        <section class="flexcontact">
+          <h1>Contact Us</h1>
+          <p>We have a wide variety of daycare facilities. Listed below is all of our locations and their addresses.</p>
+          <p>Feel free to pop in or fill out the form below!</p>
         </section>
-      </section>
-      <section id="walk" class="h-cont hidden">
-        <p>Not all dogs enjoy group walks, therefore we provide two different services. Solo or group. Discover which option is best for your dog!</p>
-      </section>
-
-        <section class="service house" id="#house">
-          <h1>House Calls</h1>
-          <h3>Duration: 1 Hour</h3>
-          <p>Click for more info</p>
-          <section class="price">
-            <h2>£15 per hour</h2>
+        <section class="locgrid">
+          <section class="manc">
+            <h3>Manchester City Centre</h3>
+            <p>Doggie Walks</p>
+            <p>3 - 5 St John Street</p>
+            <p>Manchester</p>
+            <p>M34DN</p>
+          </section>
+          <section class="macc">
+            <h3>Macclesfield</h3>
+            <p>Doggie Walks</p>
+            <p>36 Charlotte Street</p>
+            <p>Macclesfield</p>
+            <p>SK11 6JB</p>
+          </section>
+          <section class="southport">
+            <h3>Southport</h3>
+            <p>Doggie Walks</p>
+            <p>150 Lord Street</p>
+            <p>Southport</p>
+            <p>PR9 0NP</p>
+          </section>
+          <section class="warrington">
+            <h3>Warrington</h3>
+            <p>Doggie Walks</p>
+            <p>47 Old Liverpool Road</p>
+            <p>Warrington</p>
+            <p>WA51AF</p>
           </section>
         </section>
-        <section id="house" class="h-cont hidden">
-          <p>Do you need your dog looking after whilst you are not at home? This service allows you to have peace of mind while we ensure that your dog has the attention and care it deserves.</p>
-        </section>
+      </section>
+      <section class="contact">
+        <form action="mailto:nathanatherton2@gmail.com" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name">
 
-        <section class="service daycare" id="#daycare">
-          <h1>Day Care</h1>
-          <h3>Duration: 8 Hours per Day</h3>
-          <p>Click for more info</p>
-          <section class="price">
-            <h2>£60 per day</h2>
-          </section>
-        </section>
-        <section id="daycare" class="h-cont hidden">
-          <p>Our profesionnal day care centres provide the most up to date and clean facilities which ensures that your dog is safe, protected, and healthy! This will cover all services from feeding, bathing, walking, and sleeping.</p>
-        </section>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Your Email Address">
 
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number" placeholder="Your Phone Number">
+
+          <label for="msg">Message</label>
+          <textarea name="Message" id="msg" placeholder="Write your message!" style="height: 12em"></textarea>
+
+          <input type="image" src="img/sendpaw.svg" value="Submit">
+        </form>
     </article>
     <footer>
       <section class="left">
