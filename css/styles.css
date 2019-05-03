@@ -209,7 +209,7 @@ aside h3::after {
 }
 .teamlist {
   height: 25em;
-  width: 90em;
+  width: 75vw;
   transition: all 0.5s ease;
   position: relative;
   background-size: 120%;
@@ -417,4 +417,7 @@ form {
   background: #EB7859;
   padding: 2em;
   margin: 4em auto;
+}
+.smallprint {
+  font-size: 8pt;
 }
