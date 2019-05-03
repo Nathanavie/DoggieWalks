@@ -418,6 +418,116 @@ form {
   padding: 2em;
   margin: 4em auto;
 }
+.gal-txt {
+  width: 90em;
+}
 .smallprint {
   font-size: 8pt;
+}
+.gallerycontainer {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.gallery {
+  width: 90em;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.gal-img {
+  width: 25em;
+  height: 25em;
+  margin: 1%;
+  transition: all 0.8s ease;
+  background-size: cover;
+  background-position: center;
+  cursor: url(../img/1x/asset.png), pointer;
+}
+.gal-img:hover {
+  transform: scale(1.05);
+}
+
+#img1 {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/gallery/gal1.jpeg);
+}
+#img1:hover {
+  background-image: linear-gradient(#00000000,#00000000), url(../img/gallery/gal1.jpeg);
+}
+
+#img2 {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/gallery/gal2.jpg);
+}
+#img2:hover {
+  background-image: linear-gradient(#00000000,#00000000), url(../img//gallery/gal2.jpg);
+}
+#img3 {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/gallery/gal3.jpeg);
+}
+#img3:hover {
+  background-image: linear-gradient(#00000000,#00000000), url(../img/gallery/gal3.jpeg);
+}
+
+#img4 {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/gallery/gal4.jpeg);
+}
+#img4:hover {
+  background-image: linear-gradient(#00000000,#00000000), url(../img//gallery/gal4.jpeg);
+}
+
+#img5 {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/gallery/gal5.jpg);
+}
+#img5:hover {
+  background-image: linear-gradient(#00000000,#00000000), url(../img//gallery/gal5.jpg);
+}
+
+#img6 {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/gallery/gal6.jpeg);
+}
+#img6:hover {
+  background-image: linear-gradient(#00000000,#00000000), url(../img//gallery/gal6.jpeg);
+}
+
+#img7 {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/gallery/gal7.jpeg);
+}
+#img7:hover {
+  background-image: linear-gradient(#00000000,#00000000), url(../img//gallery/gal7.jpeg);
+}
+
+#img8 {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/gallery/gal8.jpeg);
+}
+#img8:hover {
+  background-image: linear-gradient(#00000000,#00000000), url(../img//gallery/gal8.jpeg);
+}
+
+#img9 {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/gallery/gal9.jpeg);
+}
+#img9:hover {
+  background-image: linear-gradient(#00000000,#00000000), url(../img//gallery/gal9.jpeg);
+}
+
+#img10 {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/gallery/gal10.jpeg);
+}
+#img10:hover {
+  background-image: linear-gradient(#00000000,#00000000), url(../img//gallery/gal10.jpeg);
+}
+
+#img11 {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/gallery/gal11.jpeg);
+}
+#img11:hover {
+  background-image: linear-gradient(#00000000,#00000000), url(../img//gallery/gal11.jpeg);
+}
+
+#img12 {
+  background-image: linear-gradient(#00000080,#00000080), url(../img/gallery/gal12.jpeg);
+}
+#img12:hover {
+  background-image: linear-gradient(#00000000,#00000000), url(../img//gallery/gal12.jpeg);
 }
