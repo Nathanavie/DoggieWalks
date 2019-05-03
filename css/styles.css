@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 header {
-  background: url("../img/banner.png");
+  background: linear-gradient(#00000080, #00000080), url("../img/lab2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -430,7 +430,7 @@ form {
   flex-direction: row;
 }
 .gallery {
-  width: 90em;
+  width: 75%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
