@@ -200,6 +200,7 @@
     grid-template-rows: 150px auto 150px auto;
     grid-template-areas: "lori gary" "lorin garyn" "rebecca joanna" "rebeccan joannan";
     grid-gap: 1em;
+    padding-left: 7%;
   }
   .teamlist {
     width: 0;
