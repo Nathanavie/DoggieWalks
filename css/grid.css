@@ -102,6 +102,7 @@
     grid-gap: 1em;
     padding: 0em 3em 3em 3em;
     width: 75%;
+    margin: 0 auto;
   }
   .offers {
     height: 7em;
@@ -114,11 +115,14 @@
   .quote {
     display: none;
   }
-  .index2:nth-child(1) {grid-area: title;}
-  .index2:nth-child(2) {grid-area: service1;}
-  .index2:nth-child(3) {grid-area: service2;}
-  .index2:nth-child(4) {grid-area: service3;}
-  .index2:nth-child(5) {grid-area: text;}
+  .index2 h2:nth-child(1) {grid-area: title;}
+  .index2 a:nth-child(2) {grid-area: service1;}
+  .index2 a:nth-child(3) {grid-area: service2;}
+  .index2 a:nth-child(4) {grid-area: service3;}
+  .index2 section:nth-child(5) {
+    grid-area: text;
+    width: 100%;
+  }
   .index2 {
     display: grid;
     grid-template-columns: 100%;
