@@ -5,6 +5,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 75%;
+    margin: 0 auto;
   }
   .sidenav {
     height: 100%;
@@ -81,6 +82,7 @@
     height: 15vw;
     width: 15vw;
     animation: bounce 1s infinite;
+    z-index: 1;
   }
   .headgrid{
     display: grid;
@@ -169,6 +171,52 @@
       background: black;
       color: white;
       text-align:
+  }
+  .lori {grid-area: lori;}
+  .gary { grid-area: gary;}
+  .rebecca { grid-area: rebecca;}
+  .joanna { grid-area: joanna;}
+  .lor {grid-area: lorin;}
+  .gar {grid-area: garyn;}
+  .reb {grid-area: rebeccan;}
+  .joa {grid-area: joannan;}
+  .desk{ display: none;}
+  .mobile {
+    font-size: 22pt;
+    text-align: left;
+    background: #eb7859;
+    margin: 0em 0em 1em 0em;
+    padding: 0.5em;
+    width: 90%;
+    filter: drop-shadow(8px 8px 8px gray);
+  }
+  .teamsection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 11em auto;
+    grid-template-areas: "lori gary rebecca joanna" "lorin garyn rebeccan joannan";
+    grid-gap: 1em;
+    margin: 0 auto;
+  }
+  .teamlist {
+    width: 0;
+  }
+  .teamlist h2 {
+    display: none;
+  }
+  .teamlist h1 {
+    z-index: 2;
+    padding: 1em;
+    background: #00000080;
+  }
+  .team {
+    width: 11em;
+    height: 11em;
   }
 }
 @media only screen and (min-width: 901px) {
@@ -267,7 +315,7 @@
     width: 100%
   }
 
-
+ .mobile {display: none;}
 }
 
 
