@@ -194,13 +194,12 @@
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 95%;
+    width: 95vw;
     display: grid;
     grid-template-columns: 150px 150px;
     grid-template-rows: 150px auto 150px auto;
     grid-template-areas: "lori gary" "lorin garyn" "rebecca joanna" "rebeccan joannan";
     grid-gap: 1em;
-    margin-left: 7%;
   }
   .teamlist {
     width: 0;
