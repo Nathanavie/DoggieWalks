@@ -391,9 +391,6 @@ aside h3::after {
   transform: scale(1.2);
   cursor: url(../img/1x/asset.png), pointer;
 }
-.flex p {
-  text-align: justify;
-}
 .sart {
   margin-bottom: 2em;
 }
