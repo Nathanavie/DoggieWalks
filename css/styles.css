@@ -240,13 +240,13 @@ aside h3::after {
 }
 
 .sitting {
-  background-image:  url(../img/lab1.jpg);
+  background-image: linear-gradient(#00000080, #00000080), url(../img/lab1.jpg);
 }
 .visits {
-  background-image:  url(../img/walk2.jpg);
+  background-image: linear-gradient(#00000080, #00000080), url(../img/walk2.jpg);
 }
 .overnight {
-  background-image:  url(../img/sit.jpg);
+  background-image: linear-gradient(#00000080, #00000080), url(../img/sit.jpg);
 }
 .lori {
   background-image:  url(../img/cava.jpg);
