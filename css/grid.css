@@ -182,12 +182,11 @@
   .joa {grid-area: joannan;}
   .desk{ display: none;}
   .mobile {
-    font-size: 22pt;
+    font-size: 18pt;
     text-align: left;
     background: #eb7859;
-    margin: 0em 0em 1em 0em;
-    padding: 0.5em;
-    width: 90%;
+    padding: 5px;
+    width: 150px;
     filter: drop-shadow(8px 8px 8px gray);
   }
   .teamsection {
@@ -197,26 +196,18 @@
     flex-wrap: wrap;
     width: 95%;
     display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    grid-template-rows: 11em auto;
-    grid-template-areas: "lori gary rebecca joanna" "lorin garyn rebeccan joannan";
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px auto 150px auto;
+    grid-template-areas: "lori gary" "lorin garyn" "rebecca joanna" "rebeccan joannan";
     grid-gap: 1em;
-    margin: 0 auto;
+    margin-left: 7%;
   }
   .teamlist {
     width: 0;
   }
-  .teamlist h2 {
-    display: none;
-  }
-  .teamlist h1 {
-    z-index: 2;
-    padding: 1em;
-    background: #00000080;
-  }
   .team {
-    width: 11em;
-    height: 11em;
+    width: 150px;
+    height: 150px;
   }
 }
 @media only screen and (min-width: 901px) {
