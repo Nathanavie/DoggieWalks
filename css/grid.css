@@ -9,6 +9,7 @@
     grid-area: nav;
     color: #FFFFFF;
     font-size: 15vw;
+    cursor: pointer;
   }
   .headtitle {grid-area: title;}
   .headtag {grid-area: tag;}
@@ -16,7 +17,10 @@
   .call {display: none;}
   .callmob {
     grid-area: call;
-    margin: 10%;
+    margin-top: 30%;
+    height: 15vw;
+    width: 15vw;
+    animation: bounce 1s infinite;
   }
   .headgrid{
     display: grid;
