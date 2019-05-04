@@ -243,6 +243,13 @@
     margin: 0em auto;
     font-size: 20pt;
   }
+  .h-cont {
+    margin: 0em auto 0 auto;
+    width: 90%;
+  }
+  .h-cont p {
+    font-size: 14pt;
+  }
 }
 @media only screen and (min-width: 1201px) {
   article {
