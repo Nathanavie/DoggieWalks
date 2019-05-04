@@ -184,6 +184,7 @@
     align-items: center;
     flex-wrap: wrap;
   }
+  .sidenav {display:none;}
   .desk-nav { grid-area: nav; }
   .mob-nav { display: none;}
   .logo { grid-area: logo;}
