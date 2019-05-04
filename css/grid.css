@@ -215,7 +215,7 @@
     position: relative;
     background-size: 120%;
     background-position: right;
-    margin-top: 1em;
+    margin: 1em auto 0 auto;
     cursor: url(../img/1x/asset.png), pointer;
     filter: drop-shadow(2px 15px 10px gray);
     z-index: 1;
@@ -225,6 +225,23 @@
     position: absolute;
     font-size: 20pt;
     margin: 1em 0em 0em 0em;
+  }
+  .service h3 {
+    font-size: 15pt;
+    position: absolute;
+    color: #FFFFFF;
+    margin: 2.75em 0em 0em 0em;
+  }
+  .service p {
+    position: absolute;
+    color: #FFFFFF;
+    margin: 3.75em 0em 0em 0em;
+  }
+  .price h2 {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0em auto;
+    font-size: 20pt;
   }
 }
 @media only screen and (min-width: 1201px) {
