@@ -1,10 +1,31 @@
 @media only screen and (max-width: 900px)  {
-  .headergrid{
+  .logo {
+    grid-area: logo;
+    width: 45%;
+    margin: auto;
+  }
+  .desk-nav {display: none;}
+  .mob-nav {
+    grid-area: nav;
+    color: #FFFFFF;
+    font-size: 15vw;
+  }
+  .headtitle {grid-area: title;}
+  .headtag {grid-area: tag;}
+  .adddog {grid-area: dog;}
+  .call {display: none;}
+  .callmob {
+    grid-area: call;
+    margin: 10%;
+  }
+  .headgrid{
     display: grid;
-    grid-template-area: ". logo nav"
-                        "head head head"
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: "call logo nav"
+                        "title title title"
                         "tag tag tag ";
-
+    padding: 1em;
+    text-align: center;
   }
   .adddog {
     display:none;
@@ -23,12 +44,14 @@
     align-items: center;
     flex-wrap: wrap;
   }
-   nav { grid-area: nav; }
+  .desk-nav { grid-area: nav; }
+  .mob-nav { display: none;}
   .logo { grid-area: logo;}
   .headtitle {grid-area: title;}
   .headtag {grid-area: tag;}
   .adddog {grid-area: dog;}
   .call {grid-area: call;}
+  .callmob {display: none;}
   .headgrid {
     display: grid;
     grid-template-columns: 10% 45% 25% 20%;

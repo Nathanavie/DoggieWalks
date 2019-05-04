@@ -17,11 +17,17 @@ header {
   background: linear-gradient(#00000080, #00000080), url("../img/lab2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
-nav {
+.desk-nav {
   margin-top: calc(0% + 3em);
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
-nav a {
+.desk-nav a {
   font-size: 14pt;
   border: none;
   outline: none;
@@ -33,7 +39,7 @@ nav a {
   transition: all 0.3s ease-in-out;
   background: #FFFFFF3d;
 }
-nav a:hover {
+.desk-nav a:hover {
   cursor: url(../img/1x/asset.png), pointer;
   background: #FFFFFF81
 }
