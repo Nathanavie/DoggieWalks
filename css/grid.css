@@ -1,4 +1,4 @@
-@media only screen and (max-width: 900px)  {
+@media only screen and (max-width: 1200px)  {
   .flex {
     display: flex;
     flex-direction: column;
@@ -208,8 +208,26 @@
     width: 150px;
     height: 150px;
   }
+  .service {
+    height: 130px;
+    width: 90%;
+    transition: all 0.5s ease;
+    position: relative;
+    background-size: 120%;
+    background-position: right;
+    margin-top: 1em;
+    cursor: url(../img/1x/asset.png), pointer;
+    filter: drop-shadow(2px 15px 10px gray);
+    z-index: 1;
+  }
+  .service h1{
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 20pt;
+    margin: 1em 0em 0em 0em;
+  }
 }
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1201px) {
   article {
     display: flex;
     flex-direction: column;
