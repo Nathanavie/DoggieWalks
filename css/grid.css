@@ -250,6 +250,23 @@
   .h-cont p {
     font-size: 14pt;
   }
+  .manc {grid-area: Manc;}
+  .macc {grid-area: Macc;}
+  .southport {grid-area: South;}
+  .warrington {grid-area: Warr;}
+  .locgrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "Manc" "Macc" "South" "Warr";
+    grid-gap: 1em;
+    width: 90%
+  }
+  form {
+    width: 70%;
+  }
+  input[type=image] {
+    margin-left: 35%;
+  }
 }
 @media only screen and (min-width: 1201px) {
   article {
