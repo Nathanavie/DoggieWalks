@@ -53,7 +53,7 @@ header {
 }
 .call {
   width: 100%;
-  animation: bounce 0.3s 1s infinite both;
+  animation: bounce 2s 1s infinite both;
 }
 .call:hover {
   cursor: url(../img/1x/asset.png), pointer;
@@ -68,19 +68,22 @@ header {
 }
 @keyframes bounce {
   0% {
-    transform: rotate3d(0, 0, 0, 0deg);
+    transform: rotate3d(0, 0, 0, 0deg) scale(1);
   }
-  25% {
-    transform: rotate3d(0, 1, 1, 1deg);
+  5% {
+    transform: rotate3d(0, 1, 1, 1deg) scale(1.05);
   }
-  50% {
-    transform: rotate3d(1, 1, 1, -1deg);
+  10% {
+    transform: rotate3d(1, 1, 1, -1deg) scale(1);
   }
-  75% {
-    transform: rotate3d(0, 1, 1, 1deg);
+  15% {
+    transform: rotate3d(0, 1, 1, 1deg) scale(1.05);
+  }
+  20% {
+    transform: rotate3d(0, 0, 0, 0deg) scale(1);
   }
   100% {
-    transform: rotate3d(0, 0, 0, 0deg);
+    transform: rotate3d(0, 0, 0, 0deg) scale(1);
   }
 }
 @keyframes show {
