@@ -437,8 +437,8 @@ form {
   justify-content: space-between;
 }
 .gal-img {
-  width: 25em;
-  height: 25em;
+  width: 20vw;
+  height: 20vw;
   margin: 1%;
   transition: all 0.8s ease;
   background-size: cover;
