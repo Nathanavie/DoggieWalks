@@ -1,4 +1,57 @@
 @media only screen and (max-width: 900px)  {
+  .sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: #eb7859;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  #close {
+    background: none;
+    color: #FFFFFF;
+    padding-left: 0;
+    font-size: 34pt;
+    text-align: right;
+    cursor: pointer;
+  }
+  .sidenav a {
+    color: #FFFFFF;
+    width: 100%;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    float: none;
+    text-align: left;
+  }
+  .sidenav a:hover {
+    background: #FFFFFF81;
+  }
+  .sidenav .active::before {
+    background-image: url('../img/navpaw.svg');
+    background-size: 25px 20px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content:"";
+  }
+  .sidenav a:hover::before {
+    background-image: url('../img/navpaw.svg');
+    background-size: 25px 20px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content:"";
+  }
   .logo {
     grid-area: logo;
     width: 45%;

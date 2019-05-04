@@ -18,4 +18,14 @@ $(document).ready(function() {
     var img = $(this).css("background-image").replace(/^url\(['"](.+)['"]\)/, '$1');
     window.open(img);
   });
+
+  $('#open').click(function(ev) {
+    ev.preventDefault();
+    $(".sidenav").css("width", "100%");
+  });
+
+  $('#close').click(function(ev) {
+    ev.preventDefault();
+    $(".sidenav").css("width", "0%");
+  });
 });
