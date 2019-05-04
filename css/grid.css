@@ -87,6 +87,77 @@
   .adddog {
     display:none;
   }
+  .indextitle {grid-area: title;}
+  .indextext {grid-area: text;}
+  .locations {grid-area: loc;}
+  .opentime {grid-area: times;}
+  .index1grid {
+    display: grid;
+    grid-template-columns: 74% 25%;
+    grid-template-areas:
+      "title title"
+      "text text"
+      "loc loc"
+      "times times";
+    grid-gap: 1em;
+    padding: 0em 3em 3em 3em;
+    width: 75%;
+  }
+  .offers {
+    height: 7em;
+    width: 100%;
+  }
+  .offers h1 {
+    margin: 1em;
+    font-size: 20pt;
+  }
+  .quote {
+    display: none;
+  }
+  .index2:nth-child(1) {grid-area: title;}
+  .index2:nth-child(2) {grid-area: service1;}
+  .index2:nth-child(3) {grid-area: service2;}
+  .index2:nth-child(4) {grid-area: service3;}
+  .index2:nth-child(5) {grid-area: text;}
+  .index2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "title" "service1" "service2" "service3" "text";
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .left {
+    grid-area: left;
+  }
+  .left p {
+    text-align: center;
+  }
+  .footerlogo {grid-area: mid;}
+  .right {
+    grid-area: right;
+    text-align: center;
+  }
+  .right ul li {
+    text-align: left;
+    margin-left: 25%;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "left"
+      "right"
+      "mid";
+      grid-gap: 1em;
+      width: 100%;
+      background: black;
+      color: white;
+      text-align:
+  }
 }
 @media only screen and (min-width: 901px) {
   article {
