@@ -10,12 +10,31 @@
     <!-- Link to JS files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- Change the colour of the top of mobile browser. -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#eb7859">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#eb7859">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#eb7859">
     <title>Gallery - Doggie Walks</title>
   </head>
   <body>
     <header>
       <section class="headgrid">
         <a class="logo" href="index.html"><img src="img/logo.svg"></img></a>
+        <nav class="mob-nav">
+          <span id="open">&#9776;</span>
+        </nav>
+        <nav class="sidenav">
+          <aside class="hide" id="close">&#10006;</aside>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="team.html">Meet The Team</a>
+          <a href="services.html">Services</a>
+          <a class="active" href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
         <nav class="hidden  " id="dropdown">
           <a class="dropbtn" href="about.html">
             About Us
@@ -24,8 +43,8 @@
             Meet The Team
           </a>
         </nav>
-        <nav>
-          <a href="index.html">
+        <nav class="desk-nav">
+          <a class="active" href="index.html">
             Home
           </a>
           <a class="dropmenu">
@@ -34,7 +53,7 @@
           <a href="services.html">
             Services
           </a>
-          <a class="active" href="gallery.html">
+          <a href="gallery.html">
             Gallery
           </a>
           <a href="contact.html">
@@ -42,8 +61,9 @@
           </a>
         </nav>
         <a href="tel:0161-883-1122"><img src="img/call.svg" class="call"  alt="Call Us"></a>
-        <h1 class="headtitle">Doggie Walks</h1>
-        <h2 class="headtag">Helping Our Animal Friends One Paw At A Time</h2>
+        <a href="tel:0161-883-1122" class="callmob"><img src="img/callmob.svg" alt="Call Us"></a>
+        <h1 class="headtitle">Gallery</h1>
+        <h2 class="headtag">Take a look into what your dog will be doing</h2>
         <a class="adddog" href="contact.html"><img src="img/Promo.svg"></img></a>
       </section>
       </header>
