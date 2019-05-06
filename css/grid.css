@@ -1,4 +1,6 @@
+/* layout for screens with a smaller width than 1200px */
 @media only screen and (max-width: 1200px)  {
+  /* flex styling, ensuring all content is in centre with 75% width. */
   .flex {
     display: flex;
     flex-direction: column;
@@ -6,6 +8,7 @@
     width: 75%;
     margin: 0 auto;
   }
+  /* sidenav styling, stopping overflow off page and hiding the nav before user opens it */
   .sidenav {
     height: 100%;
     width: 0%;
@@ -17,14 +20,16 @@
     overflow: hidden;
     transition: 0.5s;
   }
+  /* close button styling. */
   #close {
     background: none;
-    color: #FFFFFF;
+    color: #FFFFFF, white;
     padding-left: 0;
     font-size: 34pt;
     text-align: right;
     cursor: pointer;
   }
+  /* each link in side navigation styled to fill page correctly. */
   .sidenav a {
     color: #FFFFFF;
     width: 100%;
@@ -36,9 +41,11 @@
     float: none;
     text-align: left;
   }
+  /* hover element for when user is pressing the button */
   .sidenav a:hover {
     background: #FFFFFF81;
   }
+  /* before tag adding a paw before the text on the link when it is the page that is open */
   .sidenav .active::before {
     background-image: url('../img/navpaw.svg');
     background-size: 25px 20px;
@@ -49,6 +56,7 @@
     height: 25px;
     content:"";
   }
+  /* when user is clicking the link, add pawprint before the text */
   .sidenav a:hover::before {
     background-image: url('../img/navpaw.svg');
     background-size: 25px 20px;
@@ -59,6 +67,7 @@
     height: 25px;
     content:"";
   }
+  /* logo and header styling */
   .logo {
     grid-area: logo;
     width: 45%;
@@ -92,9 +101,11 @@
     padding: 1em;
     text-align: center;
   }
+  /* Hide large dog svg on mobile */
   .adddog {
     display:none;
   }
+  /* css grid to layout the first section of index page. */
   .indextitle {grid-area: title;}
   .indextext {grid-area: text;}
   .locations {grid-area: loc;}
@@ -112,6 +123,7 @@
     width: 75%;
     margin: 0 auto;
   }
+  /* styling of elements on index page */
   .offers {
     height: 7em;
     width: 100%;
@@ -124,6 +136,7 @@
   .quote {
     display: none;
   }
+  /* Grid for the second section on index page */
   .index2 h2:nth-child(1) {grid-area: title;}
   .index2 a:nth-child(2) {grid-area: service1;}
   .index2 a:nth-child(3) {grid-area: service2;}
@@ -143,6 +156,7 @@
     margin: 0 auto;
     text-align: center;
   }
+  /* CSS grid for footer */
   .left {
     grid-area: left;
   }
@@ -171,6 +185,7 @@
       color: white;
       text-align:
   }
+  /* CSSgrid for team page */
   .lori {grid-area: lori;}
   .gary { grid-area: gary;}
   .rebecca { grid-area: rebecca;}
@@ -180,6 +195,7 @@
   .reb {grid-area: rebeccan;}
   .joa {grid-area: joannan;}
   .desk{ display: none;}
+  /* styling for mobile elements with mobile class */
   .mobile {
     font-size: 18pt;
     text-align: left;
@@ -201,6 +217,7 @@
     grid-gap: 1em;
     padding-left: 7%;
   }
+  /* hide large background image in team list on mobile. */
   .teamlist {
     width: 0;
   }
@@ -208,6 +225,7 @@
     width: 150px;
     height: 150px;
   }
+  /* service elements styling */
   .service {
     height: 130px;
     width: 90%;
@@ -243,6 +261,7 @@
     margin: 0em auto;
     font-size: 20pt;
   }
+  /* hidden content styling */
   .h-cont {
     margin: 0em auto 0 auto;
     width: 90%;
@@ -250,6 +269,7 @@
   .h-cont p {
     font-size: 14pt;
   }
+  /* CSS grid for locations */
   .manc {grid-area: Manc;}
   .macc {grid-area: Macc;}
   .southport {grid-area: South;}
@@ -261,6 +281,7 @@
     grid-gap: 1em;
     width: 90%
   }
+  /* Form styling */
   form {
     width: 70%;
   }
@@ -268,19 +289,23 @@
     margin-left: 35%;
   }
 }
+/* styling for large devices */
 @media only screen and (min-width: 1201px) {
+  /* standard article style, flexing every page. */
   article {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
   }
+  /* flex display set for index 1 */
   .index1{
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
   }
+  /* css grid for header */
   .sidenav {display:none;}
   .desk-nav { grid-area: nav; }
   .mob-nav { display: none;}
@@ -302,6 +327,7 @@
     width: 80%;
   }
 
+  /* css grid for section 1 in index */
   .indextitle {grid-area: title;}
   .indextext {grid-area: text;}
   .locations {grid-area: loc;}
@@ -317,7 +343,7 @@
     padding: 0em 3em 3em 3em;
     width: 90em;
   }
-
+  /* second section on index set to flex for large devices */
   .index2 {
     display: flex;
     flex-direction: column;
@@ -325,6 +351,7 @@
     flex-wrap: wrap;
   }
 
+  /* CSS Grid for footer */
   .left {grid-area: left;}
   .footerlogo {grid-area: mid;}
   .right {grid-area: right;}
@@ -338,6 +365,7 @@
       background: black;
       color: white;
   }
+  /* Team section given specific flex properties */
   .teamsection {
     display: flex;
     flex-direction: column;
@@ -345,6 +373,7 @@
     flex-wrap: wrap;
     width: 80%;
   }
+  /* standard site wide flex properties */
   .flex {
     display: flex;
     flex-direction: column;
@@ -352,6 +381,8 @@
     flex-wrap: wrap;
     width: 75%;
   }
+
+  /* CSS grid for locations */
   .manc {grid-area: Manc;}
   .macc {grid-area: Macc;}
   .southport {grid-area: South;}
@@ -364,68 +395,6 @@
     width: 100%
   }
 
+  /* elements with mobile class are hidden */
  .mobile {display: none;}
 }
-
-
-/* .logo {
-  grid-column: 2;
-  grid-row: 1;
-}
-.nav {
-  grid-area: nav;
-}
-.title {
-  grid-area: Title;
-  color: #FFFFFF;
-  font-family: 'Montserrat', sans-serif;
-}
-.tag {
-  grid-area: Tag;
-  color: #FFFFFF;
-  font-family: 'Montserrat', sans-serif;
-  padding-bottom: 10px;
-}
-.dog {
-  grid-area: dog;
-  width: 30em;
-}
-.headergrid {
-  display: grid;
-  grid-template-rows: auto 50px auto;
-  grid-template-columns: 10em auto auto auto 10em;
-  grid-template-rows: 33.3% 33.3% 33.3%;
-  grid-template-areas: ". logo nav nav nav ."
-                       ". Title Title dog dog ."
-                       ". Tag Tag . . .";
-  grid-gap: 10px;
-  padding: 3em;
-  height: 50vh;
-}
-
-
-.heading { grid-area: heading;}
-.paragraph { grid-area: content;}
-.locations { grid-area: locations;}
-.times { grid-area: times;}
-.heading2 { grid-area: title;}
-.sitting { grid-area: sitting;}
-.sittingprice { grid-area: sittingprice;}
-.smallpet { grid-area: visits;}
-.smallpetprice { grid-area: visitsprice;}
-.overnight { grid-area: overnight;}
-.lastpar { grid-area: content2;}
-.grid {
-  display: grid;
-  grid-template-areas: "heading ."
-                       "content locations"
-                       "content times"
-                       "title title"
-                       "sitting sittingprice"
-                       "visits visitsprice"
-                       "overnight overnightprice"
-                       "content2 content2";
-  grid-template-columns: 50% 50%;
-  width: 80%;
-  margin: 0 auto;
-} */

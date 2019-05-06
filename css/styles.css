@@ -1,9 +1,12 @@
+/* hide element overriding other display set */
 .hidden {
   display: none !important;
 }
+/* animation to show dropdown on nav */
 .shownav {
   animation: navslide 0.5s forwards;
 }
+/* body styling ensuring the page doesnt scroll past either side of viewport and has no margin */
 body {
   background: url("../img/paws.svg") #DCEAFF;
   margin: 0;
@@ -13,20 +16,22 @@ body {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
 }
+/* header background image */
 header {
   background: linear-gradient(#00000080, #00000080), url("../img/lab2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+/* desktop nav styles, all browsers cant highlight text */
 .desk-nav {
   margin-top: calc(0% + 3em);
   user-select: none; /* supported by Chrome and Opera */
   -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
 }
+/* desktop nav buttons styling. */
 .desk-nav a {
   font-size: 14pt;
   border: none;
@@ -39,25 +44,31 @@ header {
   transition: all 0.3s ease-in-out;
   background: #FFFFFF3d;
 }
+/* styling to change backgound on hover */
 .desk-nav a:hover {
   cursor: url(../img/1x/asset.png), pointer;
   background: #FFFFFF81
 }
+/* dropdown styling, flex set */
 #dropdown {
   display: flex;
   position: absolute;
   margin-top: 6.5em;
 }
+/* dropdown button background */
 .dropbtn {
   background: #FFFFFF3d;
 }
+/* call class given width and animation */
 .call {
   width: 100%;
   animation: bounce 2s 1s infinite both;
 }
+/* cursor change to paw on hover */
 .call:hover {
   cursor: url(../img/1x/asset.png), pointer;
 }
+/* animation keyframes */
 @keyframes navslide {
   0% {
     margin-left: -4em;
@@ -95,21 +106,25 @@ header {
     z-index: 2;
   }
 }
+/* active nav button given ligher background */
 .active {
   background: #FFFFFF81;
 }
 .activepage {
   background: #FFFFFF81;
 }
+/* dog ad transition for hover state */
 .adddog {
   transition: all 0.3s ease-in-out;
   width: 30vw;
   margin: auto 0;
 }
+/* scale up to 1.1 on hover with cursor as paw */
 .adddog:hover {
   transform: scale(1.1);
   cursor: url(../img/1x/asset.png), pointer;
 }
+/* logo scales to 1.1 on hover with paw cursor */
 .logo{
   transition: transform 0.5s ease-in-out;
 }
@@ -117,6 +132,7 @@ header {
   cursor: url(../img/1x/asset.png), pointer;
   transform: scale(1.1);
 }
+/* standard p h1 h2 header titles styles */
 p {
   font-family: 'Raleway', sans-serif;
   font-size: 16pt;
@@ -160,6 +176,7 @@ section aside ul {
   text-align: left;
   list-style-position: inside;
 }
+/* add paw before and after heading in aside */
 aside h3::before {
   content: url(../img/navpaw.svg);
   float: left;
@@ -174,6 +191,7 @@ aside h3::after {
   height: 2em;
   margin-right: 1em;
 }
+/* make days bolder in open times to emphasise differnce between days and times */
 .day {
   font-weight: bolder;
 }
@@ -181,6 +199,7 @@ aside h3::after {
   list-style-type: none;
   margin-left: 1.5em;
 }
+/* offers styling */
 .offers {
   height: 25em;
   width: 90em;
@@ -192,6 +211,7 @@ aside h3::after {
   cursor: url(../img/1x/asset.png), pointer;
   filter: drop-shadow(2px 15px 10px gray);
 }
+/* hidden content styling */
 .h-cont {
   transition: all 0.5s ease;
   margin-top: -5em;
@@ -208,6 +228,7 @@ aside h3::after {
 .showh-cont {
   animation: show 0.5s forwards;
 }
+/* services styling, backgound zoom out on hover */
 .service {
   height: 25em;
   width: 90em;
@@ -223,6 +244,7 @@ aside h3::after {
 .service:hover {
   background-size: 100%;
 }
+/* teamlist styles */
 .teamlist {
   height: 25em;
   width: 75vw;
@@ -249,6 +271,7 @@ aside h3::after {
   color: #FFFFFF;
 }
 
+/* background images */
 .sitting {
   background-image: linear-gradient(#00000080, #00000080), url(../img/lab1.jpg);
 }
@@ -279,6 +302,7 @@ aside h3::after {
 .daycare {
   background-image: linear-gradient(#00000080, #00000080), url(../img/4dog.jpg);
 }
+/* quote and price styles, overwriting positions and width previously set */
 .quote {
   position: absolute !important;
   left: 75%;
@@ -358,6 +382,7 @@ aside h3::after {
   text-align: center;
   margin: 0;
 }
+/* last paragraph aligned to flex start to make more readable */
 .lastpar {
   align-self: flex-start;
   font-size: 18pt;
@@ -384,6 +409,7 @@ aside h3::after {
 .right ul {
   list-style: none;
 }
+/* all a tags in flex classes styling */
 .flex a {
   text-decoration: none;
   font-size: 16pt;
@@ -404,6 +430,7 @@ aside h3::after {
 .sart {
   margin-bottom: 2em;
 }
+/* form styling */
 input[type=text], input[type=email], input[type=tel], textarea {
   width: 100%;
   padding: 1em;
@@ -435,6 +462,7 @@ form {
 .smallprint {
   font-size: 8pt;
 }
+/* gallery styling */
 .gallerycontainer {
   display: flex;
   flex-wrap: nowrap;
@@ -460,6 +488,7 @@ form {
   transform: scale(1.05);
 }
 
+/* gallery images */
 #img1 {
   background-image: url(../img/gallery/gal1.jpeg);
 }
